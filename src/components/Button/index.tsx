@@ -4,7 +4,7 @@ import arrowRight from '../../assets/arrow-right.svg';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     children: React.ReactNode;
-    buttonStyle: "primary" | "secondary" | "outline";
+    buttonStyle: "primary" | "secondary" | "outline" | "unstyled";
     arrow?: boolean;
 }
 

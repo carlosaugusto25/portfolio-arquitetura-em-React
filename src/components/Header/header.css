@@ -9,6 +9,10 @@ header ul, li {
     padding: 0;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 nav a {
     color: #1d1d1d;
     text-decoration: none;
@@ -17,6 +21,66 @@ nav a {
     transition: .3s ease-in-out;
 }
 
+nav {
+    display: flex;
+}
+
 nav a:hover {
     color: #0c70f2;
+}
+
+@media screen and (max-width: 768px) {
+    nav.open{
+        display: flex;
+        align-items: end;
+    }
+
+    nav {
+        display: none;
+        background-color: #1d1d1d;
+        border-left: 10px solid #333;
+        flex-direction: column;
+        height: 100%;
+        padding: 37px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 40%;
+        z-index: 1;
+        box-shadow: -50vw 0px 0px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: flex;
+    }
+
+    nav a {
+        border-bottom: 1px solid white;
+        color: #fff;
+        font-size: 20px;
+        margin: 0 0 10px 0;
+        padding: 12px;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .close-btn {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 25px;
+        margin: 0 0 12px;
+        padding: 12px;
+        width: fit-content;
+        cursor: pointer;
+    }
 }
