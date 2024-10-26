@@ -6,4 +6,20 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-<h4>Projeto em React, TypeScript, criado com Vite, para praticar os conhecimentos da Biblioteca React e conceitos do SPA, além da criação de componentes funcionais e customizáveis, que podem ser reutilizados em várias partes do código, consumo de API, Roteamento no React e Web Storage</h4>
+<h4>Projeto em React, TypeScript, criado com Vite, para praticar os conhecimentos da Biblioteca React e conceitos do SPA.<br> Neste projeto foram praticados: </h4>
+
+<ul>
+  <li>Conceitos de componentização e reutilização de componentes do React</li>
+  <li>Rotas do React com Reac-Router-Dom</li>
+  <li>Criação de projetos em React com Vite</li>
+  <li>Uso de TypeScrit e suas Tipagens no React</li>
+  <li>Customização global de CSS para ser utilizado em contrução de interfaces que receberiam a mesma estilização</li>
+  <li>Consumo de API</li>
+  <li>Validações de formulários</li>
+  <li>LocalStorage e SessionStorage</li>
+  <li>Context API para compartilhamento de dados globais para toda a aplicação</li>
+  <li>Deploy</li>
+</ul>
+
+<h3>Link do Deploy: https://architecture-port.netlify.app</h3>
+
