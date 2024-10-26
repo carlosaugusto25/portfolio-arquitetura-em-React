@@ -1,18 +1,21 @@
 import { Button } from '../Button';
 import { Link } from 'react-router-dom';
 import './hero.css';
+import { useTexts } from '../../context/AppContext';
 
 export function Hero() {
+    
+    const { language, languages } = useTexts();
+    
     return (
         <div className='hero d-flex al-center'>
             <div className='hero-text'>
-                <h1>Let Your Home Be Unique</h1>
+                <h1>{languages[language]?.hero?.title}</h1>
                 <p>
-                    There are many variations of the passages of
-                    lorem Ipsum fromavailable, majority.
+                    {languages[language]?.hero?.subtitle}
                 </p>
                 <Link to='/about'>
-                    <Button buttonStyle='secondary' arrow>Get Started</Button>
+                    <Button buttonStyle='secondary' arrow>{languages[language]?.hero?.cta}</Button>
                 </Link>
             </div>
         </div>

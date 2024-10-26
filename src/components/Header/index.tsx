@@ -3,8 +3,11 @@ import { SiAffinitydesigner } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { Button } from "../Button";
 import './header.css';
+import { useTexts } from "../../context/AppContext";
 
 export function Header() {
+
+    const { language, languages } = useTexts();
     
     const [isOpen, setIsOpen] = useState(false);
 
@@ -25,10 +28,10 @@ export function Header() {
                     <nav className={`${isOpen ? 'open' : ''}`}>
                         <Button buttonStyle="unstyled" className="mobile-menu close-btn" onClick={toggleMenu}>X</Button>
                         <ul className="d-flex">
-                            <li><Link to='/'>Home</Link></li>
-                            <li><Link to='/about'>About</Link></li>
-                            <li><Link to='/projects'>Projects</Link></li>
-                            <li><Link to='/contact'>Contact</Link></li>
+                            <li><Link to='/'>{languages[language]?.menu?.home}</Link></li>
+                            <li><Link to='/about'>{languages[language]?.menu?.about}</Link></li>
+                            <li><Link to='/projects'>{languages[language]?.menu?.projects}</Link></li>
+                            <li><Link to='/contact'>{languages[language]?.menu?.contact}</Link></li>
                         </ul>
                     </nav>
                 </div>

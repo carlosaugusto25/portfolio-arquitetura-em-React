@@ -40,6 +40,10 @@
     margin: 20px 0 0 0;
 }
 
+.project-card img {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);

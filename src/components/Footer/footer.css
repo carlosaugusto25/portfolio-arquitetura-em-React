@@ -50,6 +50,10 @@ footer .social-links a {
     column-gap: 23px;
 }
 
+.langs-area img {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
     .footer-col {
         margin: 0 0 0 0;
