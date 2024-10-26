@@ -10,9 +10,9 @@
 
 <ul>
   <li>Conceitos de componentização e reutilização de componentes do React</li>
-  <li>Rotas do React com Reac-Router-Dom</li>
+  <li>Rotas do React com React-Router-Dom</li>
   <li>Criação de projetos em React com Vite</li>
-  <li>Uso de TypeScrit e suas Tipagens no React</li>
+  <li>Uso de TypeScript e suas Tipagens no React</li>
   <li>Customização global de CSS para ser utilizado em contrução de interfaces que receberiam a mesma estilização</li>
   <li>Consumo de API</li>
   <li>Validações de formulários</li>
